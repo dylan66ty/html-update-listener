@@ -1,7 +1,7 @@
 /*!
- * html-update-listener v1.0.5
+ * html-update-listener v1.0.7
  * (c) 2023 dylan66ty
- * Released under the ISC License.
+ * Released under the MIT License.
  */
 const asyncInterval = (callback, wait, ...args) => {
     const intervalId = {

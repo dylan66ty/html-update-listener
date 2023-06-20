@@ -65,7 +65,7 @@ class HtmlUpdateListener {
       })
     }
   }
-  public on(eventName: string | 'update', callback: () => void) {
+  public on(eventName: string, callback: () => void) {
     if (!this.event[eventName]) {
       this.event[eventName] = []
     }

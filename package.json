@@ -1,12 +1,19 @@
 {
   "name": "html-update-listener",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "前端发版后浏览器缓存问题解决方案",
   "main": "./dist/index.js",
   "es": "./dist/index.esm.js",
   "umd": "./dist/index.umd.js",
   "type": "module",
   "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.esm.js",
+      "types/*": "./src/index.ts"
+    }
+  },
   "scripts": {
     "build": "rimraf dist && rollup -c rollup.config.js",
     "build:types": "tsc -b ./tsconfig.types.json" 
@@ -20,7 +27,7 @@
     "update"
   ],
   "author": "dylan66ty",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",

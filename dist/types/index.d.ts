@@ -10,7 +10,7 @@ declare class HtmlUpdateListener {
     private getScripts;
     private run;
     private compare;
-    on(eventName: string | 'update', callback: () => void): void;
+    on(eventName: string, callback: () => void): void;
     off(eventName: string, callback: () => void): void;
     once(eventName: string, callback: (...args: any[]) => void): void;
     emit(eventName: string, ...args: any[]): void;
