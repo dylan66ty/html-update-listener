@@ -1,0 +1,37 @@
+{
+  "name": "html-update-listener",
+  "version": "1.0.6",
+  "description": "前端发版后浏览器缓存问题解决方案",
+  "main": "./dist/index.js",
+  "es": "./dist/index.esm.js",
+  "umd": "./dist/index.umd.js",
+  "type": "module",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "build:types": "tsc -b ./tsconfig.types.json" 
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "vue",
+    "html",
+    "update"
+  ],
+  "author": "dylan66ty",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@dylan66ty/eslint-config-typescript": "^0.0.3",
+    "@dylan66ty/prettier-config": "^0.0.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.25.1",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.1.3"
+  }
+}
