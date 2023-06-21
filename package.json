@@ -1,6 +1,6 @@
 {
   "name": "html-update-listener",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "前端发版后浏览器缓存问题解决方案",
   "main": "./dist/index.js",
   "es": "./dist/index.esm.js",
